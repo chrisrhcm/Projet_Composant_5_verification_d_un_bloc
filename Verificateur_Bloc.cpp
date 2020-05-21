@@ -4,7 +4,7 @@
 #include "Bloc.h"
 using namespace std;
 
-int difficulte = 0;
+int difficulte = 4;
 
 bool Verificateur_Bloc::VerificateurBloc(std::string pubkey, Bloc bloc) {
     return VerificateurHash(bloc) && VerificateurDifficulte(bloc) && VerificateurTransaction(pubkey, bloc);
