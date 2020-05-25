@@ -12,7 +12,6 @@ bool Verificateur_Bloc::VerificateurBloc(std::string pubkey, Bloc bloc) {
 
 bool Verificateur_Bloc::VerificateurTransaction(std::string pubkey, Bloc bloc) {
     std::vector<TXI> entree = bloc.tx1.TXIs;
-    std::vector<UTXO> sorties = bloc.tx1.UTXOs;
     bool testentree;
     //le prof a dit on a une seule transac mais je fais quand même une boucle
     for(int i = 0; i<entree.size(); i++){
